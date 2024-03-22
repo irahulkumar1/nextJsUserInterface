@@ -1,4 +1,4 @@
-const { defineConfig } = require('next/config');
+import { defineConfig } from 'next/config';
 
 const nextConfig = {
   images: {
@@ -20,4 +20,4 @@ const nextConfig = {
 
 const config = defineConfig(nextConfig);
 
-module.exports = config;
+export default config;
