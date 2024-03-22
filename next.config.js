@@ -10,3 +10,10 @@ module.exports = {
       ],
     },
   }
+  module.exports = {
+    experimental: {
+      outputFileTracing: true,
+      outputStandalone: true,
+      esmExternals: true,
+    },
+  };
