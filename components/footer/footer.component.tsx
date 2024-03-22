@@ -11,7 +11,7 @@ class FooterComponent extends React.PureComponent<{}, { footerData: any, categor
 
   constructor(props) {
     super(props);
-    this.state = {footerData: {}, category: []};
+    this.state = { footerData: {}, category: [] };
   }
 
   async componentDidMount() {
@@ -91,7 +91,9 @@ class FooterComponent extends React.PureComponent<{}, { footerData: any, categor
   }
 }
 
-export default FooterComponent;
+// export default FooterComponent;
+module.exports = FooterComponent;
+
 
 export async function getStaticProps() {
   try {
