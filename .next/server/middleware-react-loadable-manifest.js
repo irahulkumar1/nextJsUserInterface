@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"home/LazyLoadComponentOnScroll.js -> ./testimonials\":{\"id\":\"home/LazyLoadComponentOnScroll.js -> ./testimonials\",\"files\":[\"static/chunks/pages_home_testimonials_tsx.js\"]}}"

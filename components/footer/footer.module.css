@@ -1,0 +1,39 @@
+.footerHolder {
+    background: #3886f7;
+    color: white;
+}
+.contactButton {
+    padding: 4px 10px 4px 10px !important;
+    font-family: var(--font-futura) !important;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #3886f7;
+}
+.contactHolder {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+.footerBlock1 {
+    padding: 12px;
+}
+.footerBlock2 {
+    padding: 16px;
+    background: black;
+}
+.footerBlock2 a {
+    display: block;
+    color: white !important;
+    font-size: 14px;
+    padding-top: 8px;
+}
+.socialLinkHolder {
+    margin-top: 8px;
+    display: flex;
+}
+.socialLinkHolder span {
+    padding-right: 12px;
+    font-size: 16px;
+}

@@ -1,0 +1,99 @@
+.headerHolder {
+    padding: 8px 16px;
+    border-bottom: 3px solid #3886F7;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+.logo {
+    height: 65px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.logo > .logoHolder {
+    display: flex;
+    align-items: center;
+}
+.logo > .logoHolder > img {
+    height: 50px;
+    width: auto;
+    margin-right: 12px;
+}
+.menus {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuIcon {
+    margin-right: 4px;
+    font-size: 24px;
+}
+.colContactHolder {
+    display: flex;
+    justify-content: flex-end;
+}
+.hours24 {
+    background-color: white;
+    color: #3886F7;
+    margin-right: 8px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactButton {
+    padding: 4px 10px 4px 4px !important;
+    font-family: var(--font-avenir) !important;
+    font-weight: 400;
+    background: #3886F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    color: white;
+}
+.logoText {
+    color: #3886F7;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.menuHolder {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #3886F7;
+    margin-right: 12px;
+}
+@media (max-width: 576px) {
+    .logo {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hours24 {
+        height: 24px;
+        width: 24px;
+        font-size: 10px;
+    }
+    .contactButton {
+        display: flex !important;
+        font-size: 10px;
+    }
+    .logoText {
+        font-size: 24px;
+    }
+    .colHolder {
+        display: flex;
+        justify-content: center;
+    }
+}

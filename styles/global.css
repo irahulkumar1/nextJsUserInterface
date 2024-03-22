@@ -1,0 +1,237 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --STARTUP-rgb: #5B537C;
+  --GOODSSERVICE-rgb: #F18B74;
+  --PROJECTREPORT-rgb: #1F3064;
+  --PERSONAFINANCE-rgb: #270805;
+  --MCA-rgb: #6F166E;
+  --TRADEMARKS-rgb: #031D67;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0px;
+  color: rgb(var(--foreground-rgb));
+  background: #FFFFFF;
+  font-family: var(--font-futura), Arial, Helvetica, sans-serif !important;
+  font-weight: 400;
+}
+div, h1, h2, h3, h4, span, img {
+  font-family: var(--font-futura), Arial, Helvetica, sans-serif !important;
+}
+div {
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0px 0px 4px 0px !important;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 700px !important;
+  height: 200px !important;
+  padding: 32px;
+  font-size: 1.5em !important;
+  border-radius: 16px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.blockHolder {
+  margin: 32px 0px 16px 0px;
+  padding-bottom: 24px;
+}
+
+.heading {
+  font-size: 42px;
+  text-align: left;
+  padding: 0px 16px;
+  font-weight: 500;
+  color: #414242;
+}
+
+.hideResponsiveBlock {
+  display: flex;
+}
+button, button > span {
+  font-family: var(--font-avenir), Arial, Helvetica, sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
+h1, h2, h3 {
+  font-weight: 500;
+}
+.bgSTARTUP {
+  background-color: var(--STARTUP-rgb) !important;
+}
+.bgGOODSSERVICE {
+  background-color: var(--GOODSSERVICE-rgb) !important;
+}
+.bgPROJECTREPORT {
+  background-color: var(--PROJECTREPORT-rgb) !important;
+}
+.bgPERSONAFINANCE {
+  background-color: var(--PERSONAFINANCE-rgb) !important;
+}
+.bgMCA {
+  background-color: var(--MCA-rgb) !important;
+}
+.bgTRADEMARKS {
+  background-color: var(--TRADEMARKS-rgb) !important;
+}
+
+.colorSTARTUP {
+  color: var(--STARTUP-rgb) !important;
+}
+.colorGOODSSERVICE {
+  color: var(--GOODSSERVICE-rgb) !important;
+}
+.colorPROJECTREPORT {
+  color: var(--PROJECTREPORT-rgb) !important;
+}
+.colorPERSONAFINANCE {
+  color: var(--PERSONAFINANCE-rgb) !important;
+}
+.colorMCA {
+  color: var(--MCA-rgb) !important;
+}
+.colorTRADEMARKS {
+  color: var(--TRADEMARKS-rgb) !important;
+}
+.showResponsiveBlock {
+  display: none;
+}
+.routeOutlet {
+  overflow-x: clip;
+}
+
+@media (min-width: 1400px) {
+  .main {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Your CSS rules for screens with a width of 576px or lesser go here */
+  /* For example, you can style elements within this media query */
+  .showResponsiveBlock {
+    display: block;
+  }
+  .hideResponsiveBlock {
+    display: none !important;
+  }
+  .swiper-slide {
+    width: 280px !important;
+    height: auto !important;
+  }
+  /* sub-category page */ 
+  .border-div {
+    padding-right: 0px !important;
+  }
+  /* .border-div::after {
+    display: none;
+  } */
+  .block2 > div {
+    border-radius: 16px;
+    margin-bottom: 12px;
+  }
+  /* Add more styles as needed */
+}
+
+.border-div {
+  padding-right: 32px;
+}
+.border-div img {
+  z-index: 5;
+  position: relative;
+  border-radius: 16px;
+}
+
+.border-div::after {
+  content: "";
+  position: absolute;
+  top: 0px; /* Adjust to control the reverse border radius */
+  right: -4px; /* Adjust to control the reverse border radius */
+  bottom: -5px; /* Adjust to control the reverse border radius */
+  left: 0px; /* Adjust to control the reverse border radius */
+  background-color: white; /* Color of the :after element */
+  border-bottom-right-radius: 16px; /* Radius of the :after element */
+  z-index: 1; /* Ensure the :after element appears on top of the main element */
+}
+.block1 {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 16px 16px 0px 16px;
+  color: white;
+}
+
+.block2 > div {
+  position: relative;
+  z-index: 5;
+  border-top-left-radius: 16px;
+  padding: 16px;
+  color: white;
+  min-height: 300px;
+  font-family: var(--font-avenir) !important;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+}
+.block2::after {
+  content: "";
+  position: absolute;
+  top: 0px; /* Adjust to control the reverse border radius */
+  right: 0px; /* Adjust to control the reverse border radius */
+  bottom: 0px; /* Adjust to control the reverse border radius */
+  left: 0px; /* Adjust to control the reverse border radius */
+  background-color: white; /* Color of the :after element */
+  z-index: 1; /* Ensure the :after element appears on top of the main element */
+}
+
+.block3 {
+  border-bottom-right-radius: 16px;
+  padding: 16px 16px 0px 16px;
+  color: white;
+}
+.seoContentHolder {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+}
+.seoContentParentHolder div {
+  line-height: 1.5;
+}
+.seoContentParentHolder li {
+  line-height: 2;
+}
