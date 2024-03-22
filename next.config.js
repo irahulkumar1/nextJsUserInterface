@@ -1,4 +1,4 @@
-import { defineConfig } from 'next/config';
+const { defineConfig } = require('next/config');
 
 const nextConfig = {
   images: {
