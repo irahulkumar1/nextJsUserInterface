@@ -1,5 +1,10 @@
-import { defineConfig } from 'next/config';
+// Enable ES module support in CommonJS
+require = require('esm')(module /*, options*/);
 
+// Import the defineConfig function from next/config
+const { defineConfig } = require('next/config');
+
+// Define your nextConfig object
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -18,6 +23,5 @@ const nextConfig = {
   },
 };
 
-const config = defineConfig(nextConfig);
-
-export default config;
+// Export the config using defineConfig
+module.exports = defineConfig(nextConfig);
