@@ -1,15 +1,6 @@
-// next.config.js
-import nextConfig from 'next/config';
+import { defineConfig } from 'next/config';
 
-const {
-  // Retrieve values from the default/previous next.config.js file
-  serverRuntimeConfig,
-  publicRuntimeConfig,
-  ...otherConfig
-} = nextConfig();
-
-// Add your custom configurations here
-const customConfig = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -27,10 +18,6 @@ const customConfig = {
   },
 };
 
-// Merge the default configurations with the custom configurations
-module.exports = {
-  ...otherConfig,
-  ...customConfig,
-  serverRuntimeConfig,
-  publicRuntimeConfig,
-};
+const config = defineConfig(nextConfig);
+
+module.exports = config;
