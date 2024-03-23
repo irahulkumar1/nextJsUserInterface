@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"home/LazyLoadComponentOnScroll.js -> ./testimonials":{"id":599,"files":["static/chunks/505-670a5449276e8d31.js","static/css/14fb18a44ff05322.css","static/chunks/311.5540b2520fb9d47c.js"]}}';
